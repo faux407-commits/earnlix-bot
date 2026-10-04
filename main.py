@@ -9,16 +9,25 @@ from telegram.ext import (
     ContextTypes,
 )
 
-TOKEN = "8819045301:AAFqs_FOkVdDDipehiPPVXZVHExHvXyEqpI"
+# Mets ici ton NOUVEAU token BotFather
+TOKEN = "8819045301:AAEj02pEZbsjRaHfX21vGSEe1ikGaQbOaLo"
 
 
 def menu():
     return InlineKeyboardMarkup([
-        [InlineKeyboardButton("📲 Rejoindre WhatsApp",
-         url="https://whatsapp.com/channel/0029Vb8d84nChq6Hs5yF3u2g")],
+        [
+            InlineKeyboardButton(
+                "📱 Écrivez-moi sur WhatsApp",
+                url="https://wa.me/237699486375"
+            )
+        ],
 
-        [InlineKeyboardButton("🚀 S'inscrire sur Earnlix Digital",
-         url="https://earnlixdigital.com/register/michel11")]
+        [
+            InlineKeyboardButton(
+                "🚀 S'inscrire sur Earnlix Digital",
+                url="https://earnlixdigital.com/register/michel11"
+            )
+        ]
     ])
 
 
@@ -40,8 +49,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def whatsapp(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
-        "📲 Rejoins notre chaîne WhatsApp :\n"
-        "https://whatsapp.com/channel/0029Vb8d84nChq6Hs5yF3u2g"
+        "📱 Écrivez-moi directement sur WhatsApp :\n"
+        "https://wa.me/237699486375"
     )
 
 
